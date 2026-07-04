@@ -1,14 +1,23 @@
-body{font-family:Arial,sans-serif;margin:0}
-nav{display:flex;justify-content:space-between;
-    padding:20px;background:#0b7a3b;color:#fff}ul{display:flex;
-        gap:20px;list-style:none}.hero{padding:80px 20px;
-            background:#e9f7ee;
-            text-align:center}button{background:#0b7a3b;
-                color:#fff;border:none;
-                padding:12px 20px}.cards{display:grid;
-                    grid-template-columns:repeat(3,1fr);
-                    gap:20px;
-                    padding:20px}footer{text-align:center;
-                        padding:20px;
-                        background:#0b7a3b;
-                        color:#fff}
+:root{
+--primary:#0B7A3B;--dark:#075B2A;--gold:#F4B400;--light:#f5f7f8;--text:#333;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;color:var(--text);line-height:1.6}
+.container{width:min(1200px,92%);margin:auto}
+.header{position:sticky;top:0;background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.08);z-index:1000}
+.header .container{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{text-decoration:none;color:var(--text);font-weight:600}
+.btn{display:inline-block;padding:12px 24px;border-radius:30px;text-decoration:none}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-outline{border:2px solid #fff;color:#fff}
+.hero{background:linear-gradient(rgba(11,122,59,.85),rgba(7,91,42,.85)),url('../images/hero.jpg') center/cover;min-height:90vh;display:flex;align-items:center;color:#fff}
+.hero-container{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.hero-image img,.about-image img,.project-card img{width:100%;border-radius:16px}
+section{padding:80px 0}
+.section-title{text-align:center;margin-bottom:40px}
+.services-grid,.projects-grid,.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.service-card,.project-card,.testimonial-card{background:#fff;padding:24px;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+footer{background:var(--dark);color:#fff;text-align:center;padding:40px 0}
+input,textarea{width:100%;padding:12px;margin:10px 0;border:1px solid #ccc;border-radius:8px}
+button{background:var(--primary);color:#fff;border:none;padding:12px 20px;border-radius:8px}
