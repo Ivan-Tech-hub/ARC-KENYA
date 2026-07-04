@@ -1,2 +1,5 @@
-@media(max-width:768px)
-{ul{display:none}.cards{grid-template-columns:1fr}}
+@media(max-width:768px){
+.nav-links{display:none}
+.hero-container{grid-template-columns:1fr;text-align:center}
+.hero{min-height:auto;padding:100px 0}
+}
