@@ -1,0 +1,14 @@
+body{font-family:Arial,sans-serif;margin:0}
+nav{display:flex;justify-content:space-between;
+    padding:20px;background:#0b7a3b;color:#fff}ul{display:flex;
+        gap:20px;list-style:none}.hero{padding:80px 20px;
+            background:#e9f7ee;
+            text-align:center}button{background:#0b7a3b;
+                color:#fff;border:none;
+                padding:12px 20px}.cards{display:grid;
+                    grid-template-columns:repeat(3,1fr);
+                    gap:20px;
+                    padding:20px}footer{text-align:center;
+                        padding:20px;
+                        background:#0b7a3b;
+                        color:#fff}
